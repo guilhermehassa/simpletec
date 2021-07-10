@@ -1,0 +1,45 @@
+.filter{
+	width:100%;
+	height: fit-content;
+
+	border: 1px solid var(--cinza-claro);
+}
+
+.filter__cabecalho{
+	width:100%;
+	height:1.6rem;
+	padding:0.2rem;
+
+	display: flex;
+	justify-content:space-between;
+	background-color: var(--cinza-claro);
+}
+
+.filter__icon{
+	height: auto;
+	margin-top:-0.05rem;
+	margin-right: 0.5rem;
+}
+
+.filter__description{
+	display: flex;
+	justify-content: space-between;
+}
+
+.filter__titulo{
+	font-size: 1.2rem;
+	color: var(--preto-claro);
+}
+
+.filter__toggle{
+	height:100%;
+	width: 1rem;
+
+	cursor: pointer;
+
+	transition: 0.2s;
+}
+
+.filter__toggle-hide{
+	transform:rotate(180deg);
+}

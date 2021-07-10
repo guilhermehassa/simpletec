@@ -1,0 +1,119 @@
+@font-face {
+  font-family: Trebuchet;
+  src: url(../../fonts/trebuchet.ttf);
+}
+@font-face {
+  font-family: HandelGothic;
+  src: url(../../fonts/handelGothic.ttf);
+}
+
+:root{
+  --azul-claro:#00AFEF;
+  --azul-escuro:#0F6482;
+  --cinza-claro:#E6E6E6;
+  --cinza-escuro:#B3B3B3;
+  --preto-claro:#5a5a5a;
+  --preto:#1C1C1C;
+  --branco:#FFFFFF;
+
+  --fonte-padrao:"Trebuchet", sans-serif;
+  --fonte-simple:"HandelGothic", sans-serif;
+
+  --altura-header:6rem;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  border-spacing: unset;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-padrao);
+  height:auto;
+  min-height: 100vh;
+}
+
+.contem__pagina{
+  display: flex;
+}
+
+/* ZERAR APARENCIA BOTÃO NUMERO*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main{
+  width:83vw;
+  height:auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 0;
+  
+}
+
+.cube {
+  background-image: url("../../img/cube.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  margin-top:0.15rem;
+  margin-right: 0.25rem;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.scripts{
+  display:none;
+}
+
+.invisivel{
+  display: none;
+  opacity: 0;
+}
+
+/* MOBILE */
+@media screen and (min-width:0){
+  .contem__pagina{
+    margin-top: var(--altura-header);
+  }
+  main{
+    width:100%;
+    padding: 0.5rem 0.25rem;
+  }
+}/* MOBILE - FIM */
+
+
+/* TABLET */
+@media screen and (min-width: 768px){
+  
+}/* TABLET - FIM */
+
+
+/* 1024 */
+@media screen and (min-width: 1024px){
+  .contem__pagina{
+    margin-top: var(--altura-header);
+  }
+
+  main{
+    margin-left:17vw;
+    width:83vw;
+    padding: 1rem 1rem;
+  }
+}/* 1024 - FIM */
+
+
+/* 1200 */
+@media screen and (min-width: 1200px){
+  
+}/* 1200 - FIM */

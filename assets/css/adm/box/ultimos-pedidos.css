@@ -1,0 +1,20 @@
+.ultimos-pedidos .coluna__numero{
+    grid-column: 1/2;
+}
+
+.ultimos-pedidos .coluna__status{
+    grid-column: 2/3;
+}
+
+.ultimos-pedidos .coluna__cliente{
+    grid-column: 3/7;
+}
+
+.ultimos-pedidos .coluna__data{
+    grid-column: 7/9;
+}
+
+.ultimos-pedidos .coluna__valor{
+    grid-column: 9/11;
+}
+

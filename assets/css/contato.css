@@ -1,0 +1,132 @@
+.contato{
+  width: 100%;
+  height: calc(100vh - var(--altura-header));
+  padding: 0.5rem;
+}
+
+  .contato__titulo{
+    width: 100%;
+    height:2.5rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--preto-claro);
+  }
+
+  .contato__intro{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--preto-claro);
+  }
+
+  .contato__form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    justify-content: space-between;
+    
+  }
+
+    .contato__fieldset{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 0.1rem;
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+      .contato__legend{
+        width: 100%;
+        font-size: 1.1rem;
+        margin-bottom: 0.1rem;
+        color: var(--preto-claro);
+      }
+
+      .contato__input{
+        width: 100%;
+        padding: 0.25rem;
+        height: 1.5rem;
+        color: var(--preto);
+
+        border: 1px solid var(--preto-claro);
+
+        box-shadow: 0px 0px 0.25rem rgb(174, 174, 174);
+        outline: none;
+
+        cursor: text;
+      }
+
+      .contato__input:focus{
+        background-color:var(--cinza-claro);
+      }
+
+      .contato__texto{
+        height: 10rem;
+        resize: none;
+      }
+
+    .contato__botoes{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+      .contato__enviar{
+        height:3rem;
+        outline: none;
+
+        cursor: pointer;
+
+        background-repeat: no-repeat;
+        background-size: auto calc(100% - 0.4rem);
+        background-position: 0.2rem 0.2rem;
+
+        border: none;
+      }
+
+        .contato__whatsapp{
+          background-color:var(--azul-claro);
+          color: var(--branco);
+          background-image: url('../img/whatsapp-white.png');
+         
+
+          
+        }
+
+        .contato__email{
+          background-color:var(--preto-claro);
+          color: var(--branco);
+          background-image: url('../img/email-white.png');
+         
+        }
+
+/* MOBILE */
+@media screen and (min-width:0){
+  .contato__form{
+    padding:0 1rem;
+  }
+
+  .contato__botoes{
+    flex-direction: column;
+  }
+
+  .contato__enviar{
+    width:100%;
+  }
+}/* MOBILE - FIM */
+/* 1024 */
+@media screen and (min-width:1024px){
+  .contato__form{
+    padding:0 10rem;
+  }
+
+  .contato__enviar{
+    width:30%;
+  }
+
+  .contato__botoes{
+    flex-direction: row;
+  }
+} /* 1024 - FIM*/

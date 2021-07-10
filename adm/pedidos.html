@@ -1,0 +1,1065 @@
+<html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="simpleTEC - Simples e Tecnológico.">
+      <meta name="keywords" content="Sistemas, controle de estoque, catalogo, catálogo virtual">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="simpleTEC">
+
+      <title>Pedidos - adm > simpleTEC</title>
+
+      <link rel="shortcut icon" href="../assets/img/cube-icon.png" />
+
+      <!-- RESETAR ESTILOS -->
+      <link rel="stylesheet" href="../assets/css/reset.css">
+      <link rel="stylesheet" href="../assets/css/normalize.css">
+  
+      <!-- ESTILOS COMUNS -->
+      <link rel="stylesheet" href="../assets/css/adm/base-adm.css">
+      <link rel="stylesheet" href="../assets/css/adm/header.css">
+      <link rel="stylesheet" href="../assets/css/adm/menu.css">
+      <link rel="stylesheet" href="../assets/css/adm/footer.css">
+      <link rel="stylesheet" href="../assets/css/icons.css">
+
+      <!-- ESTILOS DOS FILTROS'S -->
+      <link rel="stylesheet" href="../assets/css/adm/filtros/filter-cabecalho.css">
+      <link rel="stylesheet" href="../assets/css/adm/filtros/filter-corpo.css">
+      <link rel="stylesheet" href="../assets/css/adm/filtros/filter-pedidos.css">
+      
+      <!--LISTAS -->
+      <link rel="stylesheet" href="../assets/css/adm/listas/listas-cabecalho.css">
+      <link rel="stylesheet" href="../assets/css/adm/listas/listas-conteudo.css">
+      <link rel="stylesheet" href="../assets/css/adm/listas/listas-pedidos.css">
+      <link rel="stylesheet" href="../assets/css/adm/listas/opcoes-lista.css">
+      
+      
+
+    </head>
+    <body>
+      <header class="header">
+          <div class="header__topo">
+              <img src="../assets/img/logo_transp.png" alt="Logo simpleTEC" class="header__logo">
+              </div>
+          <div class="header__localizacao">
+              <h1 class="header__titulo">Início - Lorem Ipsum LTDA ME - Gestor Master</h1>
+          </div>
+      </header>
+        
+      <div class="contem__pagina">
+        <section class="menu">
+          <nav class="menu__nav">
+            <ul class="menu__ul">
+              <li id="menu-inicio" class="menu__li">
+                <a href="inicio.html" class="menu__link">
+                  <span class="menu__cube"></span>
+                  <span class="menu__txt">Início</span>
+                </a>
+              </li>
+
+              <li id="menu-pedidos" class="menu__li">
+                <a href="pedidos.html" class="menu__link">
+                  <span class="menu__cube"></span>
+                  <span class="menu__txt">Pedidos</span>
+                </a>
+              </li>
+
+              <li id="menu-clientes" class="menu__li">
+                <a href="clientes.html" class="menu__link">
+                  <span class="menu__cube"></span>
+                  <span class="menu__txt">Clientes</span>
+                </a>
+              </li>
+
+              <li id="menu-produtos" class="menu__li">
+                <a href="produtos.html" class="menu__link">
+                  <span class="menu__cube"></span>
+                  <span class="menu__txt">Produtos</span>
+                </a>
+              </li>
+
+              <li id="menu-categorias" class="menu__li">
+                <a href="categorias.html" class="menu__link">
+                  <span class="menu__cube"></span>
+                  <span class="menu__txt">Categorias</span>
+                </a>
+              </li>
+
+              <li id="menu-relatorios" class="menu__li">
+                <a href="relatórios.html" class="menu__link">
+                  <span class="menu__cube"></span>
+                  <span class="menu__txt">Relatórios</span>
+                </a>
+              </li>
+
+              <li id="menu-empresa" class="menu__li">
+                <a href="empresa.html" class="menu__link">
+                  <span class="menu__cube"></span>
+                  <span class="menu__txt">Empresa</span>
+                </a>
+              </li>
+
+              <li id="menu-usuarios" class="menu__li">
+                <a href="usuarios.html" class="menu__link">
+                  <span class="menu__cube"></span>
+                  <span class="menu__txt">Usuários</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <main>
+          <section class="filter">
+            <div class="filter__cabecalho">
+              <div class="filter__description">
+                <span class="filter__icon cube"></span>
+                <h2 class="filter__titulo">Filtrar</h2>
+              </div>
+              
+              <span class="filter__toggle icon icon__up--black">
+
+              </span>
+            </div>
+
+            <div class="filter__corpo">
+              <form class="filter__form filter__form--pedidos">
+                <label class="filter__form-label filter-form__n">
+                  <legend class="filter__form-legend">Nº</legend>
+                  <div>
+                    <input type="number" name="numero-pedido" class="filter__form--input filter__form--input-number" >
+                  </div>
+                </label>
+
+                <label class="filter__form-label filter-form__de">
+                  <legend class="filter__form-legend">De</legend>
+                  <div class="filter__form--input-div-date">
+                    <input type="date" name="periodo-de" class="filter__form--input filter__form--input-date" >
+                  </div>
+                </label>
+
+                <label class="filter__form-label filter-form__ate">
+                  <legend class="filter__form-legend">Até</legend>
+                  <div class="filter__form--input-div-date">
+                    <input type="date" name="periodo-ate" class="filter__form--input filter__form--input-date" >
+                  </div>
+                </label>
+
+                <label class="filter__form-label filter-form__cliente">
+                  <legend class="filter__form-legend">Cliente</legend>
+                  <div>
+                    <input type="text" name="cliente" class="filter__form--input filter__form--input-text" >
+                  </div>
+                </label>
+
+                <label class="filter__form-label filter-form__status">
+                  <legend class="filter__form-legend">Status</legend>
+                  <div>
+                    <select name="status" class="filter__form--input filter__form--input-select" >
+                      <option value="0" class="filter__form-option">Todos</option>
+                      <option value="1" class="filter__form-option">Aberto</option>
+                      <option value="2" class="filter__form-option">Aprovado</option>
+                      <option value="3" class="filter__form-option">Separando</option>
+                      <option value="4" class="filter__form-option">Pronto</option>
+                      <option value="5" class="filter__form-option">Enviado</option>
+                      <option value="6" class="filter__form-option">Entregue</option>
+                      <option value="7" class="filter__form-option">Faturado</option>
+                      <option value="8" class="filter__form-option">Cancelado</option>
+                    </select>
+                  </div>
+                </label>
+
+                <label class="filter__form-label filter-form__produto">
+                  <legend class="filter__form-legend">Produto</legend>
+                  <div>
+                    <input type="text" name="produto" class="filter__form--input filter__form--input-text" >
+                  </div>
+                </label>
+
+                <label class="filter__form-label filter-form__categoria">
+                  <legend class="filter__form-legend">Categoria</legend>
+                  <div>
+                    <select name="categoria" class="filter__form--input filter__form--input-select" >
+                      <option value="0" class="filter__form-option">Todas</option>
+                      <option value="1" class="filter__form-option">Categoria 1</option>
+                      <option value="2" class="filter__form-option">Categoria lorem ipsum</option>
+                      <option value="3" class="filter__form-option">Peq.</option>
+                    </select>
+                  </div>
+                </label>
+
+                <button class="filter__form-send">
+                  <span class="filter__form--send-icon icon icon__filter--black"></span>
+                  <span class="filter__form--send-text">Filtrar</span>
+                </button>
+                
+
+
+              </form>
+            </div>
+          </section><!--FIM DO FILTER -->
+
+          <section class="contem-lista">
+            <div class="contem-lista__cabecalho">
+              
+              <div class="contem-lista__titulo">
+                <span class="contem-lista__titulo-cube cube"></span>
+                <h2 class="contem-lista__titulo-texto">Pedidos</h2>
+              </div>
+
+              <a href="novo-pedido.html">
+              <span class="contem-lista__add icon icon__more--blue">
+                <p class="icon__legend icon__legend--add">Novo Pedido</p>
+              </span>
+              </a>
+            </div>
+
+            <div class="contem-lista__print">
+              <span class="contem-lista__print-icon icon icon__print--white"></span>
+              <h3 class="contem-lista__print-texto">999 Resultados - Total: R$ 00.000,00</h3>
+            </div>
+
+            <table class="contem-lista__lista lista lista-pedidos">
+              <thead class="lista__cabecalho">
+                <tr class="lista__cabecalho-tr">
+                  <th class="lista__cabecalho-th">
+
+                  </th>
+
+                  <th class="lista__cabecalho-th">
+                    <h4 class="lista__cabecalho-texto">Nº</h4>
+                  </th>
+                  <th class="lista__cabecalho-th">
+                    <h4 class="lista__cabecalho-texto">Data</h4>
+                  </th>
+                  <th class="lista__cabecalho-th">
+                    <h4 class="lista__cabecalho-texto">Cliente</h4>
+                  </th>
+                  <th class="lista__cabecalho-th">
+                    <h4 class="lista__cabecalho-texto">Valor</h4>
+                  </th>
+                  <th class="lista__cabecalho-th">
+                    <h4 class="lista__cabecalho-texto">Status</h4>
+                  </th>
+
+                  
+                </tr>
+              </thead><!--FIM DE LISTA CABECALHO -->
+
+              <tbody class="lista__corpo">
+                <tr class="lista__corpo-tr">
+                  <td class="lista__corpo-td lista__corpo-td-menu icon icon__options--black">
+                    <ul class="opcoes-lista">
+                      <li class="opcoes-lista__li">
+                        <p class="opcoes-lista__li-p">Status</p>
+                      </li>
+                      
+                      <li class="opcoes-lista__li">
+                        <ul class="opcoes-lista__status-list">
+                          <li class="opcoes-lista__status-option icon icon__open--blue">
+                              <span class="icon__legend">Aberto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__aprovado--black">
+                              <span class="icon__legend">Aprovado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__preparando--black">
+                              <span class="icon__legend">Separando</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__pronto--black">
+                              <span class="icon__legend">Pronto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__enviado--black">
+                              <span class="icon__legend">Enviado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__ok--black">
+                              <span class="icon__legend">Entregue</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__faturado--black">
+                              <span class="icon__legend">Faturado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__cancelado--black">
+                              <span class="icon__legend">Cancelado</span>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__edit--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Editar pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__print--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Imprimir pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__profile--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Informações do Cliente</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__copy--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Enviar pedido</p>
+                      </li>
+
+                    </ul><!--FIM DE SUBMENU -->
+                  </td>
+                  
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">000</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">01/01/2021</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Cliente fulano de tal Lorem Ipsum </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">R$ 0000,00 </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Aberto</p>
+                  </td>
+                
+                </tr>
+                <tr class="lista__corpo-tr">
+                  <td class="lista__corpo-td lista__corpo-td-menu icon icon__options--black">
+                    <ul class="opcoes-lista">
+                      <li class="opcoes-lista__li">
+                        <p class="opcoes-lista__li-p">Status</p>
+                      </li>
+                      
+                      <li class="opcoes-lista__li">
+                        <ul class="opcoes-lista__status-list">
+                          <li class="opcoes-lista__status-option icon icon__open--blue">
+                              <span class="icon__legend">Aberto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__aprovado--black">
+                              <span class="icon__legend">Aprovado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__preparando--black">
+                              <span class="icon__legend">Separando</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__pronto--black">
+                              <span class="icon__legend">Pronto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__enviado--black">
+                              <span class="icon__legend">Enviado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__ok--black">
+                              <span class="icon__legend">Entregue</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__faturado--black">
+                              <span class="icon__legend">Faturado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__cancelado--black">
+                              <span class="icon__legend">Cancelado</span>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__edit--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Editar pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__print--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Imprimir pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__profile--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Informações do Cliente</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__copy--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Enviar pedido</p>
+                      </li>
+
+                    </ul><!--FIM DE SUBMENU -->
+                  </td>
+                  
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">000</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">01/01/2021</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Cliente fulano de tal Lorem Ipsum </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">R$ 0000,00 </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Aberto</p>
+                  </td>
+                
+                </tr>
+                <tr class="lista__corpo-tr">
+                  <td class="lista__corpo-td lista__corpo-td-menu icon icon__options--black">
+                    <ul class="opcoes-lista">
+                      <li class="opcoes-lista__li">
+                        <p class="opcoes-lista__li-p">Status</p>
+                      </li>
+                      
+                      <li class="opcoes-lista__li">
+                        <ul class="opcoes-lista__status-list">
+                          <li class="opcoes-lista__status-option icon icon__open--blue">
+                              <span class="icon__legend">Aberto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__aprovado--black">
+                              <span class="icon__legend">Aprovado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__preparando--black">
+                              <span class="icon__legend">Separando</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__pronto--black">
+                              <span class="icon__legend">Pronto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__enviado--black">
+                              <span class="icon__legend">Enviado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__ok--black">
+                              <span class="icon__legend">Entregue</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__faturado--black">
+                              <span class="icon__legend">Faturado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__cancelado--black">
+                              <span class="icon__legend">Cancelado</span>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__edit--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Editar pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__print--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Imprimir pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__profile--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Informações do Cliente</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__copy--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Enviar pedido</p>
+                      </li>
+
+                    </ul><!--FIM DE SUBMENU -->
+                  </td>
+                  
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">000</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">01/01/2021</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Cliente fulano de tal Lorem Ipsum </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">R$ 0000,00 </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Aberto</p>
+                  </td>
+                
+                </tr>
+                <tr class="lista__corpo-tr">
+                  <td class="lista__corpo-td lista__corpo-td-menu icon icon__options--black">
+                    <ul class="opcoes-lista">
+                      <li class="opcoes-lista__li">
+                        <p class="opcoes-lista__li-p">Status</p>
+                      </li>
+                      
+                      <li class="opcoes-lista__li">
+                        <ul class="opcoes-lista__status-list">
+                          <li class="opcoes-lista__status-option icon icon__open--blue">
+                              <span class="icon__legend">Aberto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__aprovado--black">
+                              <span class="icon__legend">Aprovado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__preparando--black">
+                              <span class="icon__legend">Separando</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__pronto--black">
+                              <span class="icon__legend">Pronto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__enviado--black">
+                              <span class="icon__legend">Enviado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__ok--black">
+                              <span class="icon__legend">Entregue</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__faturado--black">
+                              <span class="icon__legend">Faturado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__cancelado--black">
+                              <span class="icon__legend">Cancelado</span>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__edit--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Editar pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__print--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Imprimir pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__profile--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Informações do Cliente</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__copy--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Enviar pedido</p>
+                      </li>
+
+                    </ul><!--FIM DE SUBMENU -->
+                  </td>
+                  
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">000</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">01/01/2021</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Cliente fulano de tal Lorem Ipsum </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">R$ 0000,00 </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Aberto</p>
+                  </td>
+                
+                </tr>
+                <tr class="lista__corpo-tr">
+                  <td class="lista__corpo-td lista__corpo-td-menu icon icon__options--black">
+                    <ul class="opcoes-lista">
+                      <li class="opcoes-lista__li">
+                        <p class="opcoes-lista__li-p">Status</p>
+                      </li>
+                      
+                      <li class="opcoes-lista__li">
+                        <ul class="opcoes-lista__status-list">
+                          <li class="opcoes-lista__status-option icon icon__open--blue">
+                              <span class="icon__legend">Aberto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__aprovado--black">
+                              <span class="icon__legend">Aprovado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__preparando--black">
+                              <span class="icon__legend">Separando</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__pronto--black">
+                              <span class="icon__legend">Pronto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__enviado--black">
+                              <span class="icon__legend">Enviado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__ok--black">
+                              <span class="icon__legend">Entregue</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__faturado--black">
+                              <span class="icon__legend">Faturado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__cancelado--black">
+                              <span class="icon__legend">Cancelado</span>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__edit--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Editar pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__print--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Imprimir pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__profile--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Informações do Cliente</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__copy--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Enviar pedido</p>
+                      </li>
+
+                    </ul><!--FIM DE SUBMENU -->
+                  </td>
+                  
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">000</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">01/01/2021</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Cliente fulano de tal Lorem Ipsum </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">R$ 0000,00 </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Aberto</p>
+                  </td>
+                
+                </tr>
+                <tr class="lista__corpo-tr">
+                  <td class="lista__corpo-td lista__corpo-td-menu icon icon__options--black">
+                    <ul class="opcoes-lista">
+                      <li class="opcoes-lista__li">
+                        <p class="opcoes-lista__li-p">Status</p>
+                      </li>
+                      
+                      <li class="opcoes-lista__li">
+                        <ul class="opcoes-lista__status-list">
+                          <li class="opcoes-lista__status-option icon icon__open--blue">
+                              <span class="icon__legend">Aberto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__aprovado--black">
+                              <span class="icon__legend">Aprovado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__preparando--black">
+                              <span class="icon__legend">Separando</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__pronto--black">
+                              <span class="icon__legend">Pronto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__enviado--black">
+                              <span class="icon__legend">Enviado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__ok--black">
+                              <span class="icon__legend">Entregue</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__faturado--black">
+                              <span class="icon__legend">Faturado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__cancelado--black">
+                              <span class="icon__legend">Cancelado</span>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__edit--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Editar pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__print--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Imprimir pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__profile--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Informações do Cliente</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__copy--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Enviar pedido</p>
+                      </li>
+
+                    </ul><!--FIM DE SUBMENU -->
+                  </td>
+                  
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">000</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">01/01/2021</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Cliente fulano de tal Lorem Ipsum </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">R$ 0000,00 </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Aberto</p>
+                  </td>
+                
+                </tr>
+                <tr class="lista__corpo-tr">
+                  <td class="lista__corpo-td lista__corpo-td-menu icon icon__options--black">
+                    <ul class="opcoes-lista">
+                      <li class="opcoes-lista__li">
+                        <p class="opcoes-lista__li-p">Status</p>
+                      </li>
+                      
+                      <li class="opcoes-lista__li">
+                        <ul class="opcoes-lista__status-list">
+                          <li class="opcoes-lista__status-option icon icon__open--blue">
+                              <span class="icon__legend">Aberto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__aprovado--black">
+                              <span class="icon__legend">Aprovado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__preparando--black">
+                              <span class="icon__legend">Separando</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__pronto--black">
+                              <span class="icon__legend">Pronto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__enviado--black">
+                              <span class="icon__legend">Enviado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__ok--black">
+                              <span class="icon__legend">Entregue</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__faturado--black">
+                              <span class="icon__legend">Faturado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__cancelado--black">
+                              <span class="icon__legend">Cancelado</span>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__edit--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Editar pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__print--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Imprimir pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__profile--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Informações do Cliente</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__copy--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Enviar pedido</p>
+                      </li>
+
+                    </ul><!--FIM DE SUBMENU -->
+                  </td>
+                  
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">000</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">01/01/2021</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Cliente fulano de tal Lorem Ipsum </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">R$ 0000,00 </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Aberto</p>
+                  </td>
+                
+                </tr>
+                <tr class="lista__corpo-tr">
+                  <td class="lista__corpo-td lista__corpo-td-menu icon icon__options--black">
+                    <ul class="opcoes-lista">
+                      <li class="opcoes-lista__li">
+                        <p class="opcoes-lista__li-p">Status</p>
+                      </li>
+                      
+                      <li class="opcoes-lista__li">
+                        <ul class="opcoes-lista__status-list">
+                          <li class="opcoes-lista__status-option icon icon__open--blue">
+                              <span class="icon__legend">Aberto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__aprovado--black">
+                              <span class="icon__legend">Aprovado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__preparando--black">
+                              <span class="icon__legend">Separando</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__pronto--black">
+                              <span class="icon__legend">Pronto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__enviado--black">
+                              <span class="icon__legend">Enviado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__ok--black">
+                              <span class="icon__legend">Entregue</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__faturado--black">
+                              <span class="icon__legend">Faturado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__cancelado--black">
+                              <span class="icon__legend">Cancelado</span>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__edit--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Editar pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__print--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Imprimir pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__profile--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Informações do Cliente</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__copy--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Enviar pedido</p>
+                      </li>
+
+                    </ul><!--FIM DE SUBMENU -->
+                  </td>
+                  
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">000</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">01/01/2021</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Cliente fulano de tal Lorem Ipsum </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">R$ 0000,00 </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Aberto</p>
+                  </td>
+                
+                </tr>
+                <tr class="lista__corpo-tr">
+                  <td class="lista__corpo-td lista__corpo-td-menu icon icon__options--black">
+                    <ul class="opcoes-lista">
+                      <li class="opcoes-lista__li">
+                        <p class="opcoes-lista__li-p">Status</p>
+                      </li>
+                      
+                      <li class="opcoes-lista__li">
+                        <ul class="opcoes-lista__status-list">
+                          <li class="opcoes-lista__status-option icon icon__open--blue">
+                              <span class="icon__legend">Aberto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__aprovado--black">
+                              <span class="icon__legend">Aprovado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__preparando--black">
+                              <span class="icon__legend">Separando</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__pronto--black">
+                              <span class="icon__legend">Pronto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__enviado--black">
+                              <span class="icon__legend">Enviado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__ok--black">
+                              <span class="icon__legend">Entregue</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__faturado--black">
+                              <span class="icon__legend">Faturado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__cancelado--black">
+                              <span class="icon__legend">Cancelado</span>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__edit--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Editar pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__print--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Imprimir pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__profile--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Informações do Cliente</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__copy--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Enviar pedido</p>
+                      </li>
+
+                    </ul><!--FIM DE SUBMENU -->
+                  </td>
+                  
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">000</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">01/01/2021</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Cliente fulano de tal Lorem Ipsum </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">R$ 0000,00 </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Aberto</p>
+                  </td>
+                
+                </tr>
+                <tr class="lista__corpo-tr">
+                  <td class="lista__corpo-td lista__corpo-td-menu icon icon__options--black">
+                    <ul class="opcoes-lista">
+                      <li class="opcoes-lista__li">
+                        <p class="opcoes-lista__li-p">Status</p>
+                      </li>
+                      
+                      <li class="opcoes-lista__li">
+                        <ul class="opcoes-lista__status-list">
+                          <li class="opcoes-lista__status-option icon icon__open--blue">
+                              <span class="icon__legend">Aberto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__aprovado--black">
+                              <span class="icon__legend">Aprovado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__preparando--black">
+                              <span class="icon__legend">Separando</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__pronto--black">
+                              <span class="icon__legend">Pronto</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__enviado--black">
+                              <span class="icon__legend">Enviado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__ok--black">
+                              <span class="icon__legend">Entregue</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__faturado--black">
+                              <span class="icon__legend">Faturado</span>
+                          </li>
+                          <li class="opcoes-lista__status-option icon icon__cancelado--black">
+                              <span class="icon__legend">Cancelado</span>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__edit--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Editar pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__print--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Imprimir pedido</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__profile--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Informações do Cliente</p>
+                      </li>
+                      <li class="opcoes-lista__li">
+                        <span class="icon icon__copy--black opcoes-lista__li-icon"></span>
+                        <p class="opcoes-lista__li-p">Enviar pedido</p>
+                      </li>
+
+                    </ul><!--FIM DE SUBMENU -->
+                  </td>
+                  
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">000</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">01/01/2021</p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Cliente fulano de tal Lorem Ipsum </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">R$ 0000,00 </p>
+                  </td>
+                  <td class="lista__corpo-td">
+                    <p class="lista__corpo-texto">Aberto</p>
+                  </td>
+                
+                </tr>
+                
+                
+                
+                
+              </tbody><!--FIM DE LISTA CORPO -->
+            </table><!--FIM DE LISTA -->
+          </section><!-- FIM DE CONTEM LISTA -->
+        </main>
+      </div><!-- Fim do contem página-->
+
+      <footer class="footer">
+        <nav class="footer__menu">
+          <ul class="footer__menu-ul">
+            <a href="#" class="footer__menu-link">
+              <li class="footer__menu-li">
+                <p class="footer__menu-p">Início</p>
+              </li>
+            </a>
+            <a href="#" class="footer__menu-link">
+              <li class="footer__menu-li">
+                <p class="footer__menu-p">Pedidos</p>
+              </li>
+            </a>
+            <a href="#" class="footer__menu-link">
+              <li class="footer__menu-li">
+                <p class="footer__menu-p">Clientes</p>
+              </li>
+            </a>
+            <a href="#" class="footer__menu-link">
+              <li class="footer__menu-li">
+                <p class="footer__menu-p">Produtos</p>
+              </li>
+            </a>
+            <a href="#" class="footer__menu-link">
+              <li class="footer__menu-li">
+                <p class="footer__menu-p">Categorias</p>
+              </li>
+            </a>
+            <a href="#" class="footer__menu-link">
+              <li class="footer__menu-li">
+                <p class="footer__menu-p">Relatórios</p>
+              </li>
+            </a>
+            <a href="#" class="footer__menu-link">
+              <li class="footer__menu-li">
+                <p class="footer__menu-p">Empresa</p>
+              </li>
+            </a>
+            <a href="#" class="footer__menu-link">
+              <li class="footer__menu-li">
+                <p class="footer__menu-p">Usuários</p>
+              </li>
+            </a>
+          </ul>
+        </nav>
+
+        <p class="footer__description">
+          Produto em uso da empresa <br>
+          <span class="footer__destaque">Lorem Ipsum LTDA - ME</span><br>
+          Plano <span class="footer__destaque">Gestor Master</span><br>
+          Cliente <span class="footer__destaque">000</span>
+        </p>
+
+        <div class="footer__mais">
+          <div class="footer__contem-mais">
+            <span class="footer__icon icon icon__videos--black"></span>
+            <p class="footer__mais-texto">Tutoriais de ajuda</p>
+          </div>
+          <div class="footer__contem-mais">
+            <span class="footer__icon icon icon__mensagem--black"></span>
+            <p class="footer__mais-texto">Fale Conosco</p>
+          </div>
+        </div>
+
+        <h6 class="footer__produto">
+          Um produto <span class="footer__destaque">simpleTEC</span> - Todos os direitos reservados
+        </h6>
+
+      </footer>
+
+      <section class="scripts">
+        <script src="../assets/js/adm/indica-menu.js"></script>
+        <script src="../assets/js/adm/toggle-filter.js"></script>
+        <script src="../assets/js/adm/toggle-opcoes-lista.js"></script>
+      </section>
+    </body>
+</html>

@@ -1,0 +1,296 @@
+<html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="simpleTEC - Simples e Tecnológico.">
+      <meta name="keywords" content="Sistemas, controle de estoque, catalogo, catálogo virtual">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="simpleTEC">
+
+      <title>Pedidos - Novo > adm > simpleTEC</title>
+
+      <link rel="shortcut icon" href="../assets/img/cube-icon.png" />
+
+      <!-- RESETAR ESTILOS -->
+      <link rel="stylesheet" href="../assets/css/reset.css">
+      <link rel="stylesheet" href="../assets/css/normalize.css">
+  
+      <!-- ESTILOS COMUNS -->
+      <link rel="stylesheet" href="../assets/css/adm/base-adm.css">
+      <link rel="stylesheet" href="../assets/css/adm/header.css">
+      <link rel="stylesheet" href="../assets/css/adm/menu.css">
+      <link rel="stylesheet" href="../assets/css/adm/footer.css">
+      <link rel="stylesheet" href="../assets/css/icons.css">
+
+      <link rel="stylesheet" href="../assets/css/adm/pedido/pedido.css">
+      <link rel="stylesheet" href="../assets/css/adm/pedido/tabela-pedido.css">
+      
+      
+
+    </head>
+    <body>
+      <header class="header">
+          <div class="header__topo">
+              <img src="../assets/img/logo_transp.png" alt="Logo simpleTEC" class="header__logo">
+              </div>
+          <div class="header__localizacao">
+              <h1 class="header__titulo">Início - Lorem Ipsum LTDA ME - Gestor Master</h1>
+          </div>
+      </header>
+        
+      <div class="contem__pagina">
+        <section class="menu">
+          <nav class="menu__nav">
+            <ul class="menu__ul">
+              <li id="menu-inicio" class="menu__li">
+                <a href="inicio.html" class="menu__link">
+                  <span class="menu__cube"></span>
+                  <span class="menu__txt">Início</span>
+                </a>
+              </li>
+
+              <li id="menu-pedidos" class="menu__li">
+                <a href="pedidos.html" class="menu__link">
+                  <span class="menu__cube"></span>
+                  <span class="menu__txt">Pedidos</span>
+                </a>
+              </li>
+
+              <li id="menu-clientes" class="menu__li">
+                <a href="clientes.html" class="menu__link">
+                  <span class="menu__cube"></span>
+                  <span class="menu__txt">Clientes</span>
+                </a>
+              </li>
+
+              <li id="menu-produtos" class="menu__li">
+                <a href="produtos.html" class="menu__link">
+                  <span class="menu__cube"></span>
+                  <span class="menu__txt">Produtos</span>
+                </a>
+              </li>
+
+              <li id="menu-categorias" class="menu__li">
+                <a href="categorias.html" class="menu__link">
+                  <span class="menu__cube"></span>
+                  <span class="menu__txt">Categorias</span>
+                </a>
+              </li>
+
+              <li id="menu-relatorios" class="menu__li">
+                <a href="relatórios.html" class="menu__link">
+                  <span class="menu__cube"></span>
+                  <span class="menu__txt">Relatórios</span>
+                </a>
+              </li>
+
+              <li id="menu-empresa" class="menu__li">
+                <a href="empresa.html" class="menu__link">
+                  <span class="menu__cube"></span>
+                  <span class="menu__txt">Empresa</span>
+                </a>
+              </li>
+
+              <li id="menu-usuarios" class="menu__li">
+                <a href="usuarios.html" class="menu__link">
+                  <span class="menu__cube"></span>
+                  <span class="menu__txt">Usuários</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <main>
+
+            <section class="pedido">
+                <div class="pedido__cabecalho">
+                    <div class="pedido__description">
+                      <span class="pedido__icon cube"></span>
+                      <h2 class="pedido__titulo">Novo Pedido</h2>
+                    </div>
+                    
+                    <form class="pedido__status">
+                        <legend class="pedido__status-legend">Status Pedido</legend>
+                        <select class="pedido__status-select">
+                          <option value="1" >Aberto</option>
+                          <option value="2" >Aprovado</option>
+                          <option value="3" >Separando</option>
+                          <option value="4" >Pronto</option>
+                          <option value="5" >Enviado</option>
+                          <option value="6" >Entregue</option>
+                          <option value="7" >Faturado</option>
+                          <option value="8" >Cancelado</option>
+                        </select>
+                    </form>
+                </div><!-- FIM DE PEDIDOS CABEÇALHO -->
+
+                <form class="pedido-form">
+                  <div class="pedido-form__field">
+                    <legend class="pedido-form__legend">Cliente</legend>
+                    <input type="text" name="cliente" class="pedido-form__input">
+                  </div>
+
+                  <div class="pedido-form__field">
+                    <legend class="pedido-form__legend">Data</legend>
+                    <input type="date" name="" class="pedido-form__input">
+                  </div>
+
+                  <table class="tabela-pedido">
+                    <thead class="tabela-pedido__cabecalho">
+                      <tr class="tabela-pedido__cabecalho-linha">
+                        <th class="tabela-pedido__cabecalho-celula">
+                          Item
+                        </th>
+                        <th class="tabela-pedido__cabecalho-celula">
+                          COD
+                        </th>
+                        <th class="tabela-pedido__cabecalho-celula">
+                          Nome do Produto
+                        </th>
+                        <th class="tabela-pedido__cabecalho-celula">
+                          QTD
+                        </th>
+                        <th class="tabela-pedido__cabecalho-celula">
+                          VL. Unit.
+                        </th>
+                        <th class="tabela-pedido__cabecalho-celula">
+                          Vl. Total
+                        </th>
+                        <th class="tabela-pedido__cabecalho-celula">
+                          
+                        </th>
+                        <th class="tabela-pedido__cabecalho-celula">
+                          
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="tabela-pedido__corpo">
+                      <tr class="tabela-pedido__corpo-linha">
+                        <!-- ITEM -->
+                        <td class="tabela-pedido__corpo-celula">
+                          <input type="text" name="numero_item" class="tabela-pedido__corpo-input" value="1" readonly>
+                        </td>
+                        <!-- COD -->
+                        <td class="tabela-pedido__corpo-celula">
+                          <input type="text" name="cod_item" class="tabela-pedido__corpo-input" value="999" readonly>
+                        </td>
+                        
+                        <!-- NOME -->
+                        <td class="tabela-pedido__corpo-celula">
+                          <input type="text" name="nome_item" class="tabela-pedido__corpo-input" readonly>
+                        </td>
+
+                        <!-- QTD -->
+                        <td class="tabela-pedido__corpo-celula">
+                          <input type="number" name="qtd_item" class="tabela-pedido__corpo-input" readonly>
+                        </td>
+
+                        <!-- VL UNITARIO -->
+                        <td class="tabela-pedido__corpo-celula">
+                          <input type="number" name="vl_item" class="tabela-pedido__corpo-input" readonly>
+                        </td>
+
+                        <!-- VL TOTAL -->
+                        <td class="tabela-pedido__corpo-celula">
+                          <input type="number" name="total_item" class="tabela-pedido__corpo-input" readonly value="999.99">
+                        </td>
+
+                        <!-- EDITAR -->
+                        <td class="tabela-pedido__corpo-celula">
+                          <span class="icon icon__edit--black tabela-pedido__corpo-icon">
+                            <p class="icon__legend">Editar</p>
+                          </span>
+                        </td>
+
+                        <!-- EXCLUIR -->
+                        <td class="tabela-pedido__corpo-celula">
+                          <span class="icon icon__trash--black tabela-pedido__corpo-icon">
+                            <p class="icon__legend">Excluir</p>
+                          </span>
+                        </td>
+                        
+                        
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+            </section>
+          
+        </main>
+      </div><!-- Fim do contem página-->
+
+      <footer class="footer">
+        <nav class="footer__menu">
+          <ul class="footer__menu-ul">
+            <a href="#" class="footer__menu-link">
+              <li class="footer__menu-li">
+                <p class="footer__menu-p">Início</p>
+              </li>
+            </a>
+            <a href="#" class="footer__menu-link">
+              <li class="footer__menu-li">
+                <p class="footer__menu-p">Pedidos</p>
+              </li>
+            </a>
+            <a href="#" class="footer__menu-link">
+              <li class="footer__menu-li">
+                <p class="footer__menu-p">Clientes</p>
+              </li>
+            </a>
+            <a href="#" class="footer__menu-link">
+              <li class="footer__menu-li">
+                <p class="footer__menu-p">Produtos</p>
+              </li>
+            </a>
+            <a href="#" class="footer__menu-link">
+              <li class="footer__menu-li">
+                <p class="footer__menu-p">Categorias</p>
+              </li>
+            </a>
+            <a href="#" class="footer__menu-link">
+              <li class="footer__menu-li">
+                <p class="footer__menu-p">Relatórios</p>
+              </li>
+            </a>
+            <a href="#" class="footer__menu-link">
+              <li class="footer__menu-li">
+                <p class="footer__menu-p">Empresa</p>
+              </li>
+            </a>
+            <a href="#" class="footer__menu-link">
+              <li class="footer__menu-li">
+                <p class="footer__menu-p">Usuários</p>
+              </li>
+            </a>
+          </ul>
+        </nav>
+
+        <p class="footer__description">
+          Produto em uso da empresa <br>
+          <span class="footer__destaque">Lorem Ipsum LTDA - ME</span><br>
+          Plano <span class="footer__destaque">Gestor Master</span><br>
+          Cliente <span class="footer__destaque">000</span>
+        </p>
+
+        <div class="footer__mais">
+          <div class="footer__contem-mais">
+            <span class="footer__icon icon icon__videos--black"></span>
+            <p class="footer__mais-texto">Tutoriais de ajuda</p>
+          </div>
+          <div class="footer__contem-mais">
+            <span class="footer__icon icon icon__mensagem--black"></span>
+            <p class="footer__mais-texto">Fale Conosco</p>
+          </div>
+        </div>
+
+        <h6 class="footer__produto">
+          Um produto <span class="footer__destaque">simpleTEC</span> - Todos os direitos reservados
+        </h6>
+
+      </footer>
+
+      <section class="scripts">
+        <script src="../assets/js/adm/indica-menu.js"></script>
+      </section>
+    </body>
+</html>

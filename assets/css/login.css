@@ -1,0 +1,178 @@
+.login{
+  border:1px solid var(--cinza-claro);
+  align-items: center;
+  text-align: center;
+}
+
+  
+
+.login__titulo{
+  background-color: var(--cinza-claro);
+  
+  height: 1.4rem;
+
+  text-align: left;
+  font-size: 1.3rem;
+  color: var(--azul-escuro);
+  font-family: var(--fonte-simple);
+  display: flex;
+  justify-content: flex-start;
+}
+
+  .login__cube{
+    height: 70%;
+  }
+
+  
+
+.login__form{
+  background-color: var(--branco);
+  padding: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+ 
+
+
+
+  
+    
+
+    .login__fieldset{
+      margin: 0.25rem;
+    }
+
+    .login__content-empresa{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+      
+
+      .login__input{
+        width: 100%;
+        text-align: center;
+        border: none;
+        border-bottom: 1px solid var(--cinza-claro);
+        outline: none;
+
+        background-color: var(--cinza-claro);
+
+        color: var(--azul-escuro);
+      }
+
+      .login__login, .login__empresa{
+        width: 50%;
+        margin: 0;
+      }
+
+      .input__login{
+        text-align: right;
+        /* background: linear-gradient(90deg, var(--branco) 0%, var(--cinza-claro) 100%); */
+      }
+      .input__empresa{
+        text-align: left;
+        /* background: linear-gradient(90deg, var(--cinza-claro) 0%, var(--branco) 100%); */
+        
+      }
+      
+
+      .login__legend{
+        color: var(--preto-claro);
+        text-align: center;
+        font-size: 1rem;
+      }
+
+      .login__arroba{
+        width: 5%;
+        margin-top: 1.25rem;
+        
+      }
+
+      .login__arroba .login__legend{
+        color: var(--azul-escuro);
+      }
+
+      .login__senha{
+        margin: 0.5rem auto;
+        width: 100%;
+      } 
+
+      .login__submit{
+        font-family: var(--fonte-simple);
+        border: 1px solid var(--azul-escuro);
+        outline: none;
+        cursor: pointer
+        ;
+        width: 100%;
+        padding: 0.1rem;
+        font-size: 1.2rem;
+        
+        background-color: var(--azul-escuro);
+        color: var(--cinza-escuro);
+
+        transition: 0.2s;
+      }
+
+      .login__submit:hover, .login__submit:focus{
+        border: 1px solid var(--azul-claro);
+        color:var(--branco);
+      }
+
+      .login__esqueceu{
+        width: 100%;
+        font-weight: 100;
+        font-size: 0.9rem;
+        color: var(--azul-escuro);
+        text-align: center;
+      }
+
+        .login__esqueceu:hover{
+          text-decoration: underline;
+        }
+
+/* MOBILE */
+@media screen and (min-width:0){
+  .login__logo{
+    width:55vw;
+  }
+  .login__titulo, .login__form{
+    width: 95vw;
+  }
+}/* MOBILE - FIM */
+
+
+/* TABLET */
+@media screen and (min-width: 767px){
+  .login__logo{
+    width:45vw;
+  }
+  .login__titulo, .login__form{
+    width: 75vw;
+  }
+}/* TABLET - FIM */
+
+
+/* 1024 */
+@media screen and (min-width: 1023px){
+  
+
+  
+}/* 1024 - FIM */
+
+
+/* 1200 */
+@media screen and (min-width: 1200px){
+  .login__logo{
+    width: 15vw;
+  }
+  .login__titulo, .login__form{
+    width: 30vw;
+  }
+}/* 1200 - FIM */

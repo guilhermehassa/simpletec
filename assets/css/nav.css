@@ -1,0 +1,99 @@
+.nav{
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+
+  transition: 0.3s;
+}
+
+  .nav__ul{
+    margin: auto;
+    display: flex;
+    
+  }
+
+    .nav__li{
+      font-size: 1rem;
+      text-align: center;
+    }
+
+      .nav__link{
+        color: var(--preto-claro);
+      }
+
+    .nav__li:hover .nav__link{
+      text-decoration: underline;
+    }
+
+
+/* MOBILE */
+@media screen and (min-width:0){
+  .navToggle{
+    display: block;
+    position: fixed;
+    top: var(--altura-header);
+    left: 50%; right: 50%;
+
+    width: 2rem;
+    height: 1rem;
+    background-color: var(--cinza-claro);
+    border-radius: 0 0 0.25rem 0.25rem;
+
+    box-shadow: 0 0.15rem 0.15rem var(--cinza-escuro);
+
+    transition: 0.3s;
+  }
+
+  .navToggle-ativo{
+    top: calc(var(--altura-header) + 6rem);
+    background-image: url(../icons/up-blue.png);
+  }
+  
+  .nav{
+    margin-top: 0.5rem;
+    order: 3;
+  }
+
+    .nav-ativo{
+      margin-top: -0.5rem;
+    }
+
+  .nav__ul{
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}/* MOBILE - FIM */
+
+
+/* TABLET */
+@media screen and (min-width: 768px){
+  
+}/* TABLET - FIM */
+
+
+/* 1024 */
+@media screen and (min-width: 1024px){
+  .nav{
+    margin: 0;
+    order: initial;
+  }
+
+  .nav__ul{
+    
+    gap: 2rem;
+    flex-direction: row;
+  }
+
+  
+
+  .navToggle{
+    display: none;
+  }
+}/* 1024 - FIM */
+
+
+/* 1200 */
+@media screen and (min-width: 1200px){
+  
+}/* 1200 - FIM */
+      

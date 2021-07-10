@@ -1,0 +1,687 @@
+.icon{
+  display: flex;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat
+}
+
+.icon__legend{
+  display:none;
+  height:1.25rem;
+  padding: 0.25rem;
+  font-size:0.75rem;
+
+  margin-top:1rem;
+  margin-left:50%;
+  
+  color:var(--branco);
+
+  border-radius:0 0.25rem 0.25rem 0.25rem;
+  
+  
+  background-color: rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+}
+
+.icon__legend--add{
+  border-radius:0.25rem 0 0.25rem 0.25rem;
+  margin-left:-250%;
+  margin-top:1.5rem;
+}
+
+.icon:hover > .icon__legend{
+  display:block;
+}
+
+
+/* ADD */
+/* add*/
+
+        
+.icon__add--black{
+  background-image: url("../icons/add-black.png");
+  }
+              
+  .icon__add--blue{
+  background-image: url("../icons/add-blue.png");
+  }
+              
+  .icon__add--cyan{
+  background-image: url("../icons/add-cyan.png");
+  }
+              
+  .icon__add--gray{
+  background-image: url("../icons/add-gray.png");
+  }
+              
+  .icon__add--white{
+  background-image: url("../icons/add-white.png");
+  }
+              
+          
+          
+  /* aprovado*/
+  
+          
+  .icon__aprovado--black{
+  background-image: url("../icons/aprovado-black.png");
+  }
+              
+  .icon__aprovado--blue{
+  background-image: url("../icons/aprovado-blue.png");
+  }
+              
+  .icon__aprovado--cyan{
+  background-image: url("../icons/aprovado-cyan.png");
+  }
+              
+  .icon__aprovado--gray{
+  background-image: url("../icons/aprovado-gray.png");
+  }
+              
+  .icon__aprovado--white{
+  background-image: url("../icons/aprovado-white.png");
+  }
+              
+          
+          
+  /* cancelado*/
+  
+          
+  .icon__cancelado--black{
+  background-image: url("../icons/cancelado-black.png");
+  }
+              
+  .icon__cancelado--blue{
+  background-image: url("../icons/cancelado-blue.png");
+  }
+              
+  .icon__cancelado--cyan{
+  background-image: url("../icons/cancelado-cyan.png");
+  }
+              
+  .icon__cancelado--gray{
+  background-image: url("../icons/cancelado-gray.png");
+  }
+              
+  .icon__cancelado--white{
+  background-image: url("../icons/cancelado-white.png");
+  }
+              
+          
+          
+  /* cancel*/
+  
+          
+  .icon__cancel--black{
+  background-image: url("../icons/cancel-black.png");
+  }
+              
+  .icon__cancel--blue{
+  background-image: url("../icons/cancel-blue.png");
+  }
+              
+  .icon__cancel--cyan{
+  background-image: url("../icons/cancel-cyan.png");
+  }
+              
+  .icon__cancel--gray{
+  background-image: url("../icons/cancel-gray.png");
+  }
+              
+  .icon__cancel--white{
+  background-image: url("../icons/cancel-white.png");
+  }
+              
+          
+          
+  /* config*/
+  
+          
+  .icon__config--black{
+  background-image: url("../icons/config-black.png");
+  }
+              
+  .icon__config--blue{
+  background-image: url("../icons/config-blue.png");
+  }
+              
+  .icon__config--cyan{
+  background-image: url("../icons/config-cyan.png");
+  }
+              
+  .icon__config--gray{
+  background-image: url("../icons/config-gray.png");
+  }
+              
+  .icon__config--white{
+  background-image: url("../icons/config-white.png");
+  }
+              
+          
+          
+  /* copy*/
+  
+          
+  .icon__copy--black{
+  background-image: url("../icons/copy-black.png");
+  }
+              
+  .icon__copy--blue{
+  background-image: url("../icons/copy-blue.png");
+  }
+              
+  .icon__copy--cyan{
+  background-image: url("../icons/copy-cyan.png");
+  }
+              
+  .icon__copy--gray{
+  background-image: url("../icons/copy-gray.png");
+  }
+              
+  .icon__copy--white{
+  background-image: url("../icons/copy-white.png");
+  }
+              
+          
+          
+  /* down*/
+  
+          
+  .icon__down--black{
+  background-image: url("../icons/down-black.png");
+  }
+              
+  .icon__down--blue{
+  background-image: url("../icons/down-blue.png");
+  }
+              
+  .icon__down--cyan{
+  background-image: url("../icons/down-cyan.png");
+  }
+              
+  .icon__down--gray{
+  background-image: url("../icons/down-gray.png");
+  }
+              
+  .icon__down--white{
+  background-image: url("../icons/down-white.png");
+  }
+              
+          
+          
+  /* edit*/
+  
+          
+  .icon__edit--black{
+  background-image: url("../icons/edit-black.png");
+  }
+              
+  .icon__edit--blue{
+  background-image: url("../icons/edit-blue.png");
+  }
+              
+  .icon__edit--cyan{
+  background-image: url("../icons/edit-cyan.png");
+  }
+              
+  .icon__edit--gray{
+  background-image: url("../icons/edit-gray.png");
+  }
+              
+  .icon__edit--white{
+  background-image: url("../icons/edit-white.png");
+  }
+              
+          
+          
+  /* enviado*/
+  
+          
+  .icon__enviado--black{
+  background-image: url("../icons/enviado-black.png");
+  }
+              
+  .icon__enviado--blue{
+  background-image: url("../icons/enviado-blue.png");
+  }
+              
+  .icon__enviado--cyan{
+  background-image: url("../icons/enviado-cyan.png");
+  }
+              
+  .icon__enviado--gray{
+  background-image: url("../icons/enviado-gray.png");
+  }
+              
+  .icon__enviado--white{
+  background-image: url("../icons/enviado-white.png");
+  }
+              
+          
+          
+  /* faturado*/
+  
+          
+  .icon__faturado--black{
+  background-image: url("../icons/faturado-black.png");
+  }
+              
+  .icon__faturado--blue{
+  background-image: url("../icons/faturado-blue.png");
+  }
+              
+  .icon__faturado--cyan{
+  background-image: url("../icons/faturado-cyan.png");
+  }
+              
+  .icon__faturado--gray{
+  background-image: url("../icons/faturado-gray.png");
+  }
+              
+  .icon__faturado--white{
+  background-image: url("../icons/faturado-white.png");
+  }
+              
+          
+          
+  /* filter*/
+  
+          
+  .icon__filter--black{
+  background-image: url("../icons/filter-black.png");
+  }
+              
+  .icon__filter--blue{
+  background-image: url("../icons/filter-blue.png");
+  }
+              
+  .icon__filter--cyan{
+  background-image: url("../icons/filter-cyan.png");
+  }
+              
+  .icon__filter--gray{
+  background-image: url("../icons/filter-gray.png");
+  }
+              
+  .icon__filter--white{
+  background-image: url("../icons/filter-white.png");
+  }
+              
+          
+          
+  /* img*/
+  
+          
+  .icon__img--black{
+  background-image: url("../icons/img-black.png");
+  }
+              
+  .icon__img--blue{
+  background-image: url("../icons/img-blue.png");
+  }
+              
+  .icon__img--cyan{
+  background-image: url("../icons/img-cyan.png");
+  }
+              
+  .icon__img--gray{
+  background-image: url("../icons/img-gray.png");
+  }
+              
+  .icon__img--white{
+  background-image: url("../icons/img-white.png");
+  }
+              
+          
+          
+  /* login*/
+  
+          
+  .icon__login--black{
+  background-image: url("../icons/login-black.png");
+  }
+              
+  .icon__login--blue{
+  background-image: url("../icons/login-blue.png");
+  }
+              
+  .icon__login--cyan{
+  background-image: url("../icons/login-cyan.png");
+  }
+              
+  .icon__login--gray{
+  background-image: url("../icons/login-gray.png");
+  }
+              
+  .icon__login--white{
+  background-image: url("../icons/login-white.png");
+  }
+              
+          
+          
+  /* mensagem*/
+  
+          
+  .icon__mensagem--black{
+  background-image: url("../icons/mensagem-black.png");
+  }
+              
+  .icon__mensagem--blue{
+  background-image: url("../icons/mensagem-blue.png");
+  }
+              
+  .icon__mensagem--cyan{
+  background-image: url("../icons/mensagem-cyan.png");
+  }
+              
+  .icon__mensagem--gray{
+  background-image: url("../icons/mensagem-gray.png");
+  }
+              
+  .icon__mensagem--white{
+  background-image: url("../icons/mensagem-white.png");
+  }
+              
+          
+          
+  /* more*/
+  
+          
+  .icon__more--black{
+  background-image: url("../icons/more-black.png");
+  }
+              
+  .icon__more--blue{
+  background-image: url("../icons/more-blue.png");
+  }
+              
+  .icon__more--cyan{
+  background-image: url("../icons/more-cyan.png");
+  }
+              
+  .icon__more--gray{
+  background-image: url("../icons/more-gray.png");
+  }
+              
+  .icon__more--white{
+  background-image: url("../icons/more-white.png");
+  }
+              
+          
+          
+  /* ok*/
+  
+          
+  .icon__ok--black{
+  background-image: url("../icons/ok-black.png");
+  }
+              
+  .icon__ok--blue{
+  background-image: url("../icons/ok-blue.png");
+  }
+              
+  .icon__ok--cyan{
+  background-image: url("../icons/ok-cyan.png");
+  }
+              
+  .icon__ok--gray{
+  background-image: url("../icons/ok-gray.png");
+  }
+              
+  .icon__ok--white{
+  background-image: url("../icons/ok-white.png");
+  }
+              
+          
+          
+  /* open*/
+  
+          
+  .icon__open--black{
+  background-image: url("../icons/open-black.png");
+  }
+              
+  .icon__open--blue{
+  background-image: url("../icons/open-blue.png");
+  }
+              
+  .icon__open--cyan{
+  background-image: url("../icons/open-cyan.png");
+  }
+              
+  .icon__open--gray{
+  background-image: url("../icons/open-gray.png");
+  }
+              
+  .icon__open--white{
+  background-image: url("../icons/open-white.png");
+  }
+              
+          
+          
+  /* options*/
+  
+          
+  .icon__options--black{
+  background-image: url("../icons/options-black.png");
+  }
+              
+  .icon__options--blue{
+  background-image: url("../icons/options-blue.png");
+  }
+              
+  .icon__options--cyan{
+  background-image: url("../icons/options-cyan.png");
+  }
+              
+  .icon__options--gray{
+  background-image: url("../icons/options-gray.png");
+  }
+              
+  .icon__options--white{
+  background-image: url("../icons/options-white.png");
+  }
+              
+          
+          
+  /* preparando*/
+  
+          
+  .icon__preparando--black{
+  background-image: url("../icons/preparando-black.png");
+  }
+              
+  .icon__preparando--blue{
+  background-image: url("../icons/preparando-blue.png");
+  }
+              
+  .icon__preparando--cyan{
+  background-image: url("../icons/preparando-cyan.png");
+  }
+              
+  .icon__preparando--gray{
+  background-image: url("../icons/preparando-gray.png");
+  }
+              
+  .icon__preparando--white{
+  background-image: url("../icons/preparando-white.png");
+  }
+              
+          
+          
+  /* print*/
+  
+          
+  .icon__print--black{
+  background-image: url("../icons/print-black.png");
+  }
+              
+  .icon__print--blue{
+  background-image: url("../icons/print-blue.png");
+  }
+              
+  .icon__print--cyan{
+  background-image: url("../icons/print-cyan.png");
+  }
+              
+  .icon__print--gray{
+  background-image: url("../icons/print-gray.png");
+  }
+              
+  .icon__print--white{
+  background-image: url("../icons/print-white.png");
+  }
+              
+          
+          
+  /* profile*/
+  
+          
+  .icon__profile--black{
+  background-image: url("../icons/profile-black.png");
+  }
+              
+  .icon__profile--blue{
+  background-image: url("../icons/profile-blue.png");
+  }
+              
+  .icon__profile--cyan{
+  background-image: url("../icons/profile-cyan.png");
+  }
+              
+  .icon__profile--gray{
+  background-image: url("../icons/profile-gray.png");
+  }
+              
+  .icon__profile--white{
+  background-image: url("../icons/profile-white.png");
+  }
+              
+          
+          
+  /* pronto*/
+  
+          
+  .icon__pronto--black{
+  background-image: url("../icons/pronto-black.png");
+  }
+              
+  .icon__pronto--blue{
+  background-image: url("../icons/pronto-blue.png");
+  }
+              
+  .icon__pronto--cyan{
+  background-image: url("../icons/pronto-cyan.png");
+  }
+              
+  .icon__pronto--gray{
+  background-image: url("../icons/pronto-gray.png");
+  }
+              
+  .icon__pronto--white{
+  background-image: url("../icons/pronto-white.png");
+  }
+              
+          
+          
+  /* trash*/
+  
+          
+  .icon__trash--black{
+  background-image: url("../icons/trash-black.png");
+  }
+              
+  .icon__trash--blue{
+  background-image: url("../icons/trash-blue.png");
+  }
+              
+  .icon__trash--cyan{
+  background-image: url("../icons/trash-cyan.png");
+  }
+              
+  .icon__trash--gray{
+  background-image: url("../icons/trash-gray.png");
+  }
+              
+  .icon__trash--white{
+  background-image: url("../icons/trash-white.png");
+  }
+              
+          
+          
+  /* up*/
+  
+          
+  .icon__up--black{
+  background-image: url("../icons/up-black.png");
+  }
+              
+  .icon__up--blue{
+  background-image: url("../icons/up-blue.png");
+  }
+              
+  .icon__up--cyan{
+  background-image: url("../icons/up-cyan.png");
+  }
+              
+  .icon__up--gray{
+  background-image: url("../icons/up-gray.png");
+  }
+              
+  .icon__up--white{
+  background-image: url("../icons/up-white.png");
+  }
+              
+          
+          
+  /* videos*/
+  
+          
+  .icon__videos--black{
+  background-image: url("../icons/videos-black.png");
+  }
+              
+  .icon__videos--blue{
+  background-image: url("../icons/videos-blue.png");
+  }
+              
+  .icon__videos--cyan{
+  background-image: url("../icons/videos-cyan.png");
+  }
+              
+  .icon__videos--gray{
+  background-image: url("../icons/videos-gray.png");
+  }
+              
+  .icon__videos--white{
+  background-image: url("../icons/videos-white.png");
+  }
+              
+          
+          
+  /* whatsapp*/
+  
+          
+  .icon__whatsapp--black{
+  background-image: url("../icons/whatsapp-black.png");
+  }
+              
+  .icon__whatsapp--blue{
+  background-image: url("../icons/whatsapp-blue.png");
+  }
+              
+  .icon__whatsapp--cyan{
+  background-image: url("../icons/whatsapp-cyan.png");
+  }
+              
+  .icon__whatsapp--gray{
+  background-image: url("../icons/whatsapp-gray.png");
+  }
+              
+  .icon__whatsapp--white{
+  background-image: url("../icons/whatsapp-white.png");
+  }
+              
+          
+          

@@ -1,0 +1,12 @@
+.melhores-clientes .coluna__nome{
+    grid-column: 1/7;
+}
+
+.melhores-clientes .coluna__ultimo-pedido{
+    grid-column: 7/9;
+}
+
+.melhores-clientes .coluna__total-pedidos{
+    grid-column: 9/11;
+}
+

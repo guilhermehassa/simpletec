@@ -1,0 +1,43 @@
+.mostra{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  display: none;
+}
+  .mostra-on{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mostra__img{
+    object-fit: contain;
+    max-width: 85%;
+    max-height: 85%;
+  }
+
+/* MOBILE */
+@media screen and (min-width:0){
+  
+}/* MOBILE - FIM */
+
+
+/* TABLET */
+@media screen and (min-width: 769px){
+  
+}/* TABLET - FIM */
+
+
+/* 1024 */
+@media screen and (min-width: 1023px){
+  
+}/* 1024 - FIM */
+
+
+/* 1200 */
+@media screen and (min-width: 1200px){
+  
+}/* 1200 - FIM */

@@ -1,0 +1,12 @@
+.categoria-mais-vendida .coluna__cd-categoria{
+    grid-column: 1/2;
+}
+
+.categoria-mais-vendida .coluna__nome-categoria{
+    grid-column: 2/9;
+}
+
+.categoria-mais-vendida .coluna__qtd-itens-vendidos{
+    grid-column: 9/11;
+}
+

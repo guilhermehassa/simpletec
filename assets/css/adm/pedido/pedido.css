@@ -1,0 +1,80 @@
+.pedido{
+    width:100%;
+    height: fit-content;
+
+    border: 1px solid var(--cinza-claro);
+}
+
+.pedido__cabecalho{
+    width:100%;
+    height:1.6rem;
+    padding:0.2rem;
+
+    display: flex;
+    justify-content:space-between;
+    background-color: var(--cinza-claro);
+}
+
+.pedido__icon{
+    height: auto;
+    margin-top:-0.05rem;
+    margin-right: 0.5rem;
+}
+
+.pedido__description{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pedido__titulo{
+    font-size: 1.2rem;
+    color: var(--preto-claro);
+}
+
+.pedido__status{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap: 0.5rem;
+}
+
+.pedido__status-legend{
+    color: var(--azul-escuro);
+    font-size: 1rem;
+}
+
+.pedido__status-select{
+    font-size: 0.8rem;
+    background-color: var(--cinza-claro);
+}
+
+.pedido-form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.25rem;
+}
+
+    .pedido-form__field{
+        width: 50%;
+        height: 1.1rem;
+        display: flex;
+        gap: 0.25rem;
+        margin: 0;
+        margin-bottom: 0.5rem;
+        justify-content: flex-start;
+     }
+
+    .pedido-form__legend{
+        font-size: 1rem;
+        color: var(--preto);
+    }
+    .pedido-form__input{
+        width: 12rem;
+        height: 1rem;
+        font-size: 0.9rem;
+        outline: none;
+    }

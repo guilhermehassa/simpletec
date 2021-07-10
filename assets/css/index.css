@@ -1,0 +1,50 @@
+
+h1{
+    color: var(--azul-escuro);
+    font-size: 2rem;
+    display: none;
+    
+  }
+  h2{
+    color: var(--preto-claro);
+    font-weight: lighter;
+    font-size: 1.25rem;
+  }
+  p{
+    font-size: 0.9rem;
+    column-rule-color: var(--preto);
+    text-align: justify;
+    font-weight: 100;
+  }
+  img{
+    width: 20rem;
+    max-width: 80%;
+  }
+  a{
+    text-decoration: none;
+    color: var(--azul-escuro);
+    font-size: 1rem;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  
+  .link__insta{
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    margin-top:-0.1rem;
+  }
+  
+    .icon__insta{
+      width:0.9rem;
+      height: 0.9rem;
+      background-image: url('../img/insta_icon.png');
+      background-size:99%;
+      background-repeat: no-repeat;
+      background-position:top;
+      margin-top: 0.2rem;
+      
+    }
+  
+  

@@ -1,0 +1,76 @@
+.tabela-pedido{
+  width: 100%;
+  padding: 0.25rem;
+  
+  border-top:1px solid var(--cinza-escuro);
+  border-left:1px solid var(--cinza-escuro);
+}
+
+  .tabela-pedido__cabecalho{
+    border-bottom: 1px solid var(--cinza-escuro);
+    width: 100%;
+  }
+
+    .tabela-pedido__cabecalho-linha{
+      display:grid;
+      grid-template-columns: 5% 5% 45% 5% 15% 15% 5% 5%;
+      grid-template-rows: 2rem;
+      background-color: var(--preto-claro);
+    }
+
+    
+
+      .tabela-pedido__cabecalho-celula{
+        border-right:1px solid var(--cinza-escuro);
+        
+        
+        text-align: center;
+        color: var(--branco);
+        font-size: 0.9rem;
+        align-self: center;
+        height: 2rem;
+        padding: 0.5rem;
+      }
+
+  .tabela-pedido__corpo{
+    width: 100%;
+  }
+
+    .tabela-pedido__corpo-linha{
+      display:grid;
+      grid-template-columns: 5% 5% 45% 5% 15% 15% 5% 5%;
+      grid-template-rows: 1.5rem;
+      border-bottom: 1px solid var(--cinza-escuro);
+      background-color: var(--branco);
+    }
+    .tabela-pedido__corpo-linha:nth-child(2){
+      background-color: var(--cinza-claro);
+    }
+      .tabela-pedido__corpo-celula{
+        border-right: 1px solid var(--cinza-escuro);
+        height: 1.5rem;
+        padding: 0.25rem;
+        
+      }
+
+        .tabela-pedido__corpo-input{
+          height: 1rem;
+          width: 100%;
+          border: none;
+          outline: none;
+          text-align: center;
+          color: var(--preto);
+          background-color: transparent;
+
+          border: none;
+          cursor: default;
+        }
+  
+
+
+
+
+  .tabela-pedido__corpo-icon{
+    height: 100%;
+    cursor: pointer;
+  }

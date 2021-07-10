@@ -1,0 +1,4 @@
+.lista-pedidos .lista__cabecalho-tr, .lista-pedidos .lista__corpo-tr{
+    grid-template-columns: 4% 6% 15% 45% 15% 15%;
+    grid-template-rows: auto;
+}

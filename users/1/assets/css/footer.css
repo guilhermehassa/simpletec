@@ -1,0 +1,48 @@
+.footer{
+  width: 100%;
+  height: var(--altura-footer);
+  padding:0.25rem;
+
+  font-size: 0.9rem;
+  color:rgb(104, 104, 104);
+
+  border-top:1px solid #0F6482;
+
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+
+  font-weight: bold;
+
+  background-color: var(--branco);
+}
+
+ 
+
+  .footer__img{
+    margin-top:-0.1rem;
+    height: 200%;
+  }
+
+/* MOBILE */
+@media screen and (min-width:0){
+  
+}/* MOBILE - FIM */
+
+
+/* TABLET */
+@media screen and (min-width: 769px){
+  
+}/* TABLET - FIM */
+
+
+/* 1024 */
+@media screen and (min-width: 1023px){
+  
+}/* 1024 - FIM */
+
+
+/* 1200 */
+@media screen and (min-width: 1200px){
+  
+}/* 1200 - FIM */

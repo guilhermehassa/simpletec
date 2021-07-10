@@ -1,0 +1,4 @@
+.filter__form--pedidos{
+    grid-template-columns: 8% 10% 10% 20% 12% 20% 20%;
+    row-gap: 0.2rem;
+}

@@ -1,0 +1,12 @@
+.produtos-mais-pedidos .coluna__produto{
+    grid-column: 1/8;
+}
+
+.produtos-mais-pedidos .coluna__qtd-vendidos{
+    grid-column: 8/10;
+}
+
+.produtos-mais-pedidos .coluna__status{
+    grid-column: 10/11;
+}
+
