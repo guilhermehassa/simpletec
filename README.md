@@ -22,3 +22,8 @@
   <br>
   <li>GIT: Básico</li>
 </ul>
+
+<h3>Contatos</h3>
+<p>Fone/Whatsapp: (13) 98144-7414</p>
+<p>E-Mail: contato@simple.tec.br</p>
+<p>Linkedin: https://www.linkedin.com/in/guilherme-hass%C3%A3-57755b52/</p>
