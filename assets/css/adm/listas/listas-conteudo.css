@@ -42,7 +42,7 @@
     .lista__corpo-td{
       height: 2rem;
       text-align: center;
-      
+      display: flex;
     }
 
     .lista__corpo-td-menu{
@@ -55,7 +55,7 @@
     }
 
     .lista__corpo-texto{
-      margin-top:0.55rem;
+      margin:auto;
       font-size: 0.9rem;
       color: var(--preto);
       text-align: center;

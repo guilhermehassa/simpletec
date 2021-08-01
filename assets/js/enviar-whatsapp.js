@@ -1,7 +1,7 @@
 
 
 function enviarWhatsapp(){
-  var destinatario = "5513981447414";
+  var destinatario = "5513997671326";
   var nome = document.querySelector('#nome').value;
   var email = document.querySelector('#email').value;
   var telefone = document.querySelector('#telefone').value;

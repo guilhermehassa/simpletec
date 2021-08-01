@@ -324,10 +324,10 @@ include('includes/funcoes.php');
                           while($foto=mysqli_fetch_row($selectFoto)){
                             $contadorFoto++;
                             echo'
-                              <img class="invisivel" src="fotos/'.$foto[0].'/'.$foto[0].$foto[2].'" alt="'.$produto['nome'].' - '.$contadorFoto.'" >
+                              <img class="invisivel" src="fotos/'.$foto[0].'/thumb_'.$foto[0].$foto[2].'" alt="'.$produto['nome'].' - '.$contadorFoto.'" >
                             ';
 
-                            $ultimaFoto='fotos/'.$foto[0].'/'.$foto[0].$foto[2];
+                            $ultimaFoto='fotos/'.$foto[0].'/thumb_'.$foto[0].$foto[2];
                           }
                       
                         echo'

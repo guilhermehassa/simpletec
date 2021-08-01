@@ -243,6 +243,7 @@
 
 	function excluirFoto($empresa,$codigoFoto,$extensao){
 		unlink('../../users/'.$empresa.'/fotos/'.$codigoFoto.'/'.$codigoFoto.$extensao);// APAGAR FOTO
+		unlink('../../users/'.$empresa.'/fotos/'.$codigoFoto.'/thumb_'.$codigoFoto.$extensao);// APAGAR FOTO
 		rmdir('../../users/'.$empresa.'/fotos/'.$codigoFoto.'/'); // APAGAR PASTA
 	}
 

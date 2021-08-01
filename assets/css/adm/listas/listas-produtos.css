@@ -26,7 +26,7 @@
     grid-template-columns: 4% 6% 25% 15% 10% 10% 10% 10% 10%;
 	}
 	.lista__corpo-td:nth-child(2), .lista__corpo-td:nth-child(4), .lista__corpo-td:nth-child(5), .lista__corpo-td:nth-child(6), .lista__corpo-td:nth-child(7), .lista__corpo-td:nth-child(8), .lista__cabecalho-th:nth-child(2), .lista__cabecalho-th:nth-child(4), .lista__cabecalho-th:nth-child(5), .lista__cabecalho-th:nth-child(6), .lista__cabecalho-th:nth-child(7), .lista__cabecalho-th:nth-child(8){
-		display: block;
+		display: flex;
 	}
 }/* 1024 - FIM */
 

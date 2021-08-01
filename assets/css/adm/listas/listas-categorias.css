@@ -26,7 +26,7 @@
     grid-template-columns: 4% 6% 55% 20% 15%;
 	}
 	.lista__corpo-td:nth-child(2), .lista__corpo-td:nth-child(4), .lista__corpo-td:nth-child(5), .lista__cabecalho-th:nth-child(2), .lista__cabecalho-th:nth-child(4), .lista__cabecalho-th:nth-child(5){
-		display: block;
+		display: flex;
 	}
 }/* 1024 - FIM */
 

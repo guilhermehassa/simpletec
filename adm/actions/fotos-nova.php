@@ -5,8 +5,13 @@
   include ('../includes/security.php');
   include ('../includes/connect_cliente.php');
 
+  include '../../php-image-resize/lib/ImageResize.php';
+
   $produto=$_POST['codigo'];
-  $extensao = strtolower(substr($_FILES['foto']['name'], -4)); //pega a extensao do arquivo
+
+  $nome_temporario = $_FILES['foto']['name'];
+  $separados_por_pontos = explode('.',$nome_temporario);
+  $extensao = '.'.end($separados_por_pontos);
 
   $sql = '
     INSERT INTO tb_foto_produto(
@@ -18,7 +23,7 @@
       VALUES(
       "",
       "'.$produto.'",
-      "'.$extensao.'"
+      ".jpg"
     )
   ';
     
@@ -30,10 +35,26 @@
     
   }
 
-
+  $nome_imagem=$fotoProduto;//nome da imagem
+  $nome_com_extensao = $nome_imagem . $extensao; //define o nome do arquivo com extensao
   $diretorio = criarPastaFotoProduto($empresa['codigo'],$fotoProduto);
-  $novoNome = nomearFoto($_FILES['foto']['name'],$fotoProduto);
-  uparFoto($_FILES['foto']['tmp_name'],$diretorio,$novoNome);
+
+  move_uploaded_file($_FILES['foto']['tmp_name'], $diretorio.$nome_imagem.'_original'.$extensao); //efetua o upload
+
+  //FAZ A FOTO GRANDE OTIMIZADA
+  $image = new \Gumlet\ImageResize($diretorio.$nome_imagem.'_original'.$extensao);
+  $image->resizeToBestFit ( 800 , 800 );
+  $image->quality_jpg = 70;
+  $image->save($diretorio.$nome_imagem.'.jpg', IMAGETYPE_JPEG);
+
+  //FAZ A THUMB
+  $image2 = new \Gumlet\ImageResize($diretorio.$nome_imagem.'_original'.$extensao);
+  $image2->resizeToBestFit ( 300 , 300 );
+  $image2->quality_jpg = 70;
+  $image2->save($diretorio.'thumb_'.$nome_imagem.'.jpg', IMAGETYPE_JPEG);
+
+  // APAGAR FOTO ORIGINAL
+  unlink($diretorio.$nome_imagem.'_original'.$extensao);
 
   echo'
   <script>

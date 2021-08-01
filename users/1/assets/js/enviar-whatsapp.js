@@ -1,5 +1,4 @@
-// var destinatario = "551330326836";
-var destinatario = "5513981447414";
+var destinatario = "5513997671326";
 
 function enviarWhatsapp(produto){
   

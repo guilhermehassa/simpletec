@@ -10,7 +10,10 @@ listaProdutos.addEventListener('click',function(event){
 
     var produto = event.target;
 
-    mostraImg.src = produto.src;
+    var srcFatiado = produto.src.split("_");
+    var diretorio = srcFatiado[0].slice(0, -5);
+
+    mostraImg.src = diretorio + srcFatiado[1];
     mostra.classList.add('mostra-on');
   }
 

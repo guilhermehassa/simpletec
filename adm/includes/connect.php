@@ -1,9 +1,9 @@
 <?php
 
-$banco = "";
-$usuario = "";
-$senha = '';
-$hostname = '';
+$banco = "ghtecb50_simpleTEC";
+$usuario = "ghtecb50_ST";
+$senha = '@Simple30';
+$hostname = 'localhost';
 
 $con = mysqli_connect($hostname,$usuario,$senha,$banco);
 

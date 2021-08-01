@@ -1,4 +1,5 @@
 var botaoFiltro = document.querySelector('.filter__form-send');
+var formFiltro = document.querySelector('.filter__form');
 
 function filtrarProdutos(){
   var numero = document.querySelector('#filter-numero').value;
@@ -15,4 +16,11 @@ function filtrarProdutos(){
 botaoFiltro.addEventListener('click',function(){
   filtrarProdutos();
   // console.log('produtos.php?pesquisa=sim&numero='+numero+'&nome='+nome+'&status='+status+'&categoria='+categoria+'&destaque='+destaque+'&foto='+foto);
+});
+
+formFiltro.addEventListener("keyup", function(event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    filtrarProdutos();
+  }
 });
