@@ -1,29 +1,23 @@
-<h1>Olá, me chamo Guilherme e apresento o projeto <a href="https://simple.tec.br/">simpleTEC 🔹</a></h1>
+<h1><a href="https://simple.tec.br/">simpleTEC 🔹</a> - Soluções simplificadas de tecnologia.</h1>
 
-<h2>Faço este projeto para aprimorar meus conhecimentos em Front-End e programação, ao passo em que ofereço uma ferramentas dinâmica e eficaz ao público.</h2>
+<h2>Meu projeto mais ambicioso até o momento. Um Catálogo digital dinâmico para diversos clientes.</h2>
 
-<p>A princípio projeto atende ao site institucional da simpleTEC, junto a painel administrativo que possibilita controle de dados de catálogo digital de diversos clientes.<p>
+<h3>
+Pensado para expor produtos de maneira prática e dinâmica em qualquer dispositivo pelo navegador, sem necessidade programas ou aplicativos adicionais para visualizar ou alterar as informações.</h3>
+<li>Com painel administrativo fácil e intuitivo, o usuário tem a liberdade de cadastrar, editar, desativar ou excluir produtos quando e onde quiser, efetivando suas alterações em tempo real.</li>
+<li>Além das categorias, o catálogo conta com campo de pesquisa por nome, código ou tags com outros termos para seu produto, e campo OFERTAS, onde você indica produtos com maior destaque no seu catálogo.</li>
+<li>Sem limite de produtos cadastrados, e até 3 fotos para cada produto, além de permitir que seja informado ou não o valor do produto.</li>
+<li>No card de cada produto seus clientes encontrarão além das informações inseridas, link direto pro Whatsapp do clientes informando nome e código do produto ao qual mostrou interesse.</li>
+<br><br>
 
-<p>Neste projeto foram aplicados conhecimentos sobre HTML, CSS, Javascript, PHP e Mysqli, obtidos em maior parte através da Alura</p>
+<p>Nesse projeto além dos conhecimentos em front-end, usei PHP e MySQL, configurações de banco de dados, usuario ftp, e-mail e outras opções do cPanel, além das bibliotecas PHPMailer-master e PHP-IMAGE-RESIZE, que ampliaram muito meu leque de possibilidades.<p>
 
-<h3>Nível de conhecimento</h3>
-<ul>
-  <li>HTML: Intermediário</li>
-  <li>
-    CSS: Intermediário
-    <ul>
-      <li>Bootstrap: Básico</li>
-    </ul>
-  </li>
-  <li>Javascript: Básico</li>
-  <br>
-  <li>PHP: Básico</li>
-  <li>Myqsli: Básico</li>
-  <br>
-  <li>GIT: Básico</li>
-</ul>
+<p>Mais desafiador que "codar", foi a idealização desse projeto como um todo. Definir as regras, pensar na aplicação e integração entre painel administrativo, banco de dados e o catálogo final, com as informações consistentes em todas as pontas sem truncar, perder ou sobrar dados, imagens e etc.</p>
+
+<p>Existe muito o que aperfeiçoar e funcionalidades que podem ser inseridas nesse projeto, mas me sinto orgulhoso de conseguir entregar como esta, e seguro que com o mesmo empenho e estudo que me fizeram chegar até aqui, podem me levar a muito mais.<p>
+
 
 <h3>Contatos</h3>
-<p>Fone/Whatsapp: (13) 98144-7414</p>
-<p>E-Mail: contato@simple.tec.br</p>
-<p>Linkedin: https://www.linkedin.com/in/guilherme-hass%C3%A3-57755b52/</p>
+<p>Fone/Whatsapp: <a href="https://api.whatsapp.com/send?phone=5513981447414&text=Contato%20pelo%20portifolio%20GITHUB">(13) 98144-7414</a><br>
+E-Mail: <a href="mailto:gui.hassa@hotmail.com">gui.hassa@hotmail.com</a><br>
+Linkedin: <a href="https://www.linkedin.com/in/guilherme-hass%C3%A3-57755b52/" target="_blank">Guilherme Hassã</a></p>
